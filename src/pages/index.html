@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт компании Мой Офис">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanchard</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.scss %>">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__container">
+            <div class="header__burger">
+                <img class="burger__img" src="<%=require('src/images/Burger.svg')%>" alt="Логотип">
+            </div>
+            <div class="header__bar">
+                <a href="" class="logo__link">
+                    <img class="logo__img" src="<%=require('src/images/Logo.svg')%>" alt="Логотип">
+                </a>
+                <div class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            О нас
+                        </li>
+                        <li class="nav__item">
+                            Галерея
+                        </li>
+                        <li class="nav__item">
+                            Каталог
+                        </li>
+                        <li class="nav__item">
+                            События
+                        </li>
+                        <li class="nav__item">
+                            Издания
+                        </li>
+                        <li class="nav__item">
+                            Проекты
+                        </li>
+                        <li class="nav__item">
+                            Контакты
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__search-mobile">
+                <img class="search-mobile__img" src="<%=require('src/images/Search.svg')%>" alt="Логотип">
+            </div>
+
+            <a href="#" class="header__enter">
+                <span class="header__enter-logo">
+
+                </span>
+                <span class="header__enter-btn">
+                    Войти
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="header__sub">
+        <div class="container">
+            <div class="sub__container">
+                <div class="sub__nav">
+                    <ul class="sub__nav-list">
+                        <li class="sub__nav-item">
+                            <div class="sub__btn">
+                                Реализм
+                            </div>
+                        </li>
+                        <li class="sub__nav-item">
+                            <div class="sub__btn">
+                                Импрессионизм
+                            </div>
+                        </li>
+                        <li class="sub__nav-item">
+                            <div class="sub__btn">
+                                Постимпрессионизм
+                            </div>
+                        </li>
+                        <li class="sub__nav-item">
+                            <div class="sub__btn">
+                                Авангард
+                            </div>
+                        </li>
+                        <li class="sub__nav-item">
+                            <div class="sub__btn">
+                                Футуризм
+                            </div>
+                        </li>
+                    </ul>
+                </div>   
+                <div class="sub__search">
+                    <form action="" method="GET" class="sub__form">
+                        <input type="button" value="" class="form__btn">
+                        <input type="search" placeholder="Поиск по сайту" class="form__search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section__about">
+    <div class="container">
+        <div class="about__inscription">
+            <h2 class="about__header">
+                Прикоснитесь к прекрасному
+            </h2>
+            <p class="about__text">
+                Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+            </p>
+            <button class="about__btn">
+                Подписаться на рассылку
+            </button>
+        </div>
+    </div>
+</section>
+</body>
+</html>

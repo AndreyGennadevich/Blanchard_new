@@ -1,0 +1,30 @@
+.section {
+    &__about {
+        background-image: url("~src/images/birmingham-museums-trust-MK_98NuC4-4-unsplash2.jpg");
+        background-size: 100% 100%;
+    }
+
+    .about {
+        &__inscription {
+            text-align: center;
+            padding-top: 30px;
+    
+            @media screen and (min-width: $screen-w--sx) {
+                text-align: start;
+            }
+        }
+    
+        &__header {
+            margin: 0;
+            margin-bottom: 16px;
+            font-size: 32px;
+            line-height: 44px;
+            font-weight: 700;
+        }
+    
+        &__text {
+            margin-bottom: 45px;
+        }
+    }
+}
+
