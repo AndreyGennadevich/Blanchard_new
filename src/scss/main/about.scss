@@ -1,30 +1,49 @@
 .section {
-    &__about {
-        background-image: url("~src/images/birmingham-museums-trust-MK_98NuC4-4-unsplash2.jpg");
-        background-size: 100% 100%;
-    }
 
-    .about {
-        &__inscription {
-            text-align: center;
-            padding-top: 30px;
+    &__about {
+
+
+        .about {
+
+            &__container {
+                padding-top: 54px;
+                padding-bottom: 41px;
+                
+                @media screen and (min-width: $screen-w--sx) {
+                    padding-top: 86px;
+                    padding-bottom: 70px;
+                }
+
+                
+                @media screen and (min-width: $screen-w--xxl) {
+                    padding-right: 514px;
+                }
+            }
+
+            &__header {
+                margin-bottom: 14px;
+
+                @media screen and (min-width: $screen-w--sx) {
+                    margin-bottom: 20px;
+                }
+            }
     
-            @media screen and (min-width: $screen-w--sx) {
-                text-align: start;
+
+            
+            &__text {
+                margin: 0;
+                font-size: 14px;
+                line-height: 28px;
+
+                @media screen and (min-width: $screen-w--sx) {
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+
             }
         }
-    
-        &__header {
-            margin: 0;
-            margin-bottom: 16px;
-            font-size: 32px;
-            line-height: 44px;
-            font-weight: 700;
-        }
-    
-        &__text {
-            margin-bottom: 45px;
-        }
     }
-}
 
+    
+
+}

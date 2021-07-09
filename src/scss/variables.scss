@@ -121,7 +121,7 @@ $screen-w--xs:                  640px !default;
 $screen-w--s:                   640px; // 640px;
 $screen-w--sx:                  768px; // 768px;
 $screen-w--m:                   960px !default;
-$screen-w--l:                   1200px !default;
+$screen-w--l:                   1024px !default;
 $screen-w--xl:                  1280px !default;
 $screen-w--xxl:                 1920px !default;
 
@@ -137,6 +137,7 @@ $font-family--serif_bold:        "roboto", "Helvetica Neue", Helvetica, Arial, s
 $font-family--serif:            Georgia, 'Times New Roman', Times, serif;
 $font-family--monospace:        Monaco, Menlo, Consolas, 'Courier New', monospace;
 $font-family--montserrat:       Montserrat, sans-serif;
+$font-family--opensans:         'Open Sans', sans-serif;
 
 $font-family--base:             $font-family--sansSerif;
 $font-family--alt:              $font-family--serif;

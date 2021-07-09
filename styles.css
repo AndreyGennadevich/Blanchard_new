@@ -1,0 +1,364 @@
+
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/opensans-bold.woff2) format("woff2"), url(fonts/opensans-bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/opensans-italic.woff2) format("woff2"), url(fonts/opensans-italic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/opensans-regular.woff2) format("woff2"), url(fonts/opensans-regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/opensans-semibold.woff2) format("woff2"), url(fonts/opensans-semibold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+.header {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+.header__container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    padding: 12px 0;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
+    .header__container {
+        height: 100px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .header__burger {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header__burger .burger__img {
+        width: 38px;
+        height: 28px;
+    }
+}
+.header__bar {
+    display: flex;
+}
+.header__sub {
+    display: none;
+}
+@media screen and (min-width: 1920px) {
+    .header__sub {
+        display: block;
+    }
+}
+.header .logo__link {
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (min-width: 768px) {
+    .header .logo__img {
+        width: 188px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .header .logo__img {
+        width: 174px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .header__search-mobile {
+        display: none;
+    }
+}
+.header__search-mobile .search__container {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.9);
+}
+@media screen and (min-width: 1024px) {
+    .header__search-mobile .search__container {
+        padding-bottom: 4px;
+        background: #18171b;
+    }
+}
+.header__search-mobile .search__btn {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: none;
+    background: transparent;
+    background-image: url(img/Search.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media screen and (min-width: 1024px) {
+    .header__search-mobile .search__btn {
+        width: 30px;
+        height: 30px;
+    }
+}
+.header__search-mobile .search__btn-close {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: none;
+    background-image: url(img/X.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.header__search-mobile .search__input {
+    width: 221px;
+    padding-bottom: 2px;
+    vertical-align: super;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.header__search-mobile .search__input::placeholder {
+    color: #fff;
+}
+.header__nav {
+    display: none;
+}
+@media screen and (min-width: 1920px) {
+    .header__nav {
+        display: block;
+        margin: auto auto auto 180px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header .search-mobile__img {
+        width: 30px;
+    }
+}
+.header__enter {
+    display: none;
+}
+@media screen and (min-width: 1920px) {
+    .header__enter {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.header__enter-logo {
+    width: 13px;
+    height: 13px;
+    margin-right: 3px;
+    background: url(img/Vector.svg);
+}
+.header__enter-btn,
+.header__enter-logo {
+    display: inline-block;
+}
+.header .nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.header .nav__item {
+    font-weight: 600;
+    margin-right: 35px;
+}
+@media screen and (min-width: 1920px) {
+    .header .nav__item {
+        margin-right: 62px;
+    }
+}
+.header__sub {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 70px;
+    top: 100%;
+}
+.header .sub__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 28px;
+}
+.header .sub__nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.header .sub__nav-item {
+    position: relative;
+    margin-right: 94px;
+}
+.header .sub__btn {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+.header .sub__btn:after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    padding-left: 5px;
+    background-image: url(img/Rectangle54.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.header .sub__menu {
+    position: absolute;
+    top: 45px;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-500px);
+}
+.header .sub__menu .menu__link {
+    color: #fff;
+    text-decoration: none;
+}
+.header .sub__form {
+    display: flex;
+    align-items: center;
+}
+.header .form__btn {
+    width: 22px;
+    margin-right: 8px;
+    border: none;
+    background: transparent;
+    background-image: url(img/Search.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header .form__search {
+    width: 221px;
+    padding-bottom: 2px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.header .form__search::placeholder {
+    color: #fff;
+}
+body {
+    font-family: Open Sans, sans-serif;
+}
+.heading {
+    margin: 0;
+    font-weight: 400;
+    font-size: 28px;
+}
+@media screen and (min-width: 768px) {
+    .heading {
+        font-size: 48px;
+    }
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+.section__hero {
+    background-image: url(img/birmingham-museums-trust-MK_98NuC4-4-unsplash2.jpg);
+    background-size: 100% 100%;
+}
+.section__hero .hero__inscription {
+    text-align: center;
+    padding: 33px 14px 46px;
+    color: #fff;
+}
+@media screen and (min-width: 768px) {
+    .section__hero .hero__inscription {
+        text-align: start;
+        padding: 114px 0 115px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .section__hero .hero__inscription {
+        width: 575px;
+        padding: 142px 0 122px;
+    }
+}
+.section__hero .hero__header {
+    margin: 0 0 10px;
+    padding: 0 3px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+@media screen and (min-width: 768px) {
+    .section__hero .hero__header {
+        padding: 0 96px 0 0;
+        margin-bottom: 12px;
+        font-size: 72px;
+        line-height: 82px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .section__hero .hero__header {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+.section__hero .hero__text {
+    margin: 0 0 42px;
+    font-size: 12px;
+    line-height: 16px;
+}
+@media screen and (min-width: 768px) {
+    .section__hero .hero__text {
+        margin-bottom: 133px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .section__hero .hero__text {
+        margin-bottom: 92px;
+    }
+}
+.section__hero .hero__btn {
+    padding: 13px 22px;
+    border-radius: 100px;
+    border: none;
+    background: #9d5cd0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+    .section__hero .hero__btn {
+        padding: 25px 40px;
+        font-size: 18px;
+    }
+}
+.section .about__text {
+    margin: 0;
+}

@@ -1,12 +1,23 @@
 body{
-  font-family: $font-family--montserrat;
+  font-family: $font-family--opensans;
+}
+
+.heading {
+  margin: 0;
+  font-weight: normal;
+  font-size: 28px;
+
+  @media screen and (min-width: $screen-w--sx) {
+    font-size: 48px;
+  }
+
 }
 
 .container {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $screen-w--sx) {
     padding: 0 50px;
   }
 
